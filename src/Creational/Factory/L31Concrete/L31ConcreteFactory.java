@@ -1,4 +1,4 @@
-package Factory.L31Concrete;
+package Creational.Factory.L31Concrete;
 
 
 public class L31ConcreteFactory {

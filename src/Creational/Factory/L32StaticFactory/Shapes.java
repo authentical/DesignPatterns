@@ -1,4 +1,4 @@
-package Factory.L31Concrete;
+package Creational.Factory.L32StaticFactory;
 
 public class Shapes {
 

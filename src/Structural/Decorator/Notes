@@ -1,0 +1,4 @@
+-Flexible alternative to sub-classing
+-Ideal: Can't modify existing functionality but can extend it
+-Useful for adding specific functionalities to a specific object
+as opposed to the whole class.

@@ -1,4 +1,4 @@
-package Factory.L30Abstract;
+package Creational.Factory.L30Abstract;
 
 public class L30AbstractCreator {
 

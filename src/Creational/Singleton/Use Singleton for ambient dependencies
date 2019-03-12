@@ -1,0 +1,14 @@
+In such cases where you'll use a class several times, then removing it from the graph
+(by making it Creational.Singleton) is preferable to DI.
+
+-Logger
+-Calendar
+
+Also:
+Domain singletons
+" if you have an Organization entity and there can be only one such entity in your
+domain model, it’s just fine to represent it as a Creational.Singleton as well:"
+https://enterprisecraftsmanship.com/2016/05/03/singleton-vs-dependency-injection/
+
+How is that different from a Logger other than that Logger is a utility...
+

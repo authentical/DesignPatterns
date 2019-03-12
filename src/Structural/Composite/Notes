@@ -1,0 +1,8 @@
+-Eliminate implementation problems of tree structures, hard to manage
+-Allowing using all objects the same way (through and interface)
+-Easy to add new components
+
+e.g. Depts and employees or Menus
+
+-More difficult to restrict usage
+-Have to do checking at run-time

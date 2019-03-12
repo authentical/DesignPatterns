@@ -1,4 +1,4 @@
-package Factory.L30Abstract;
+package Creational.Factory.L30Abstract;
 
 public interface Shape {
 
@@ -9,7 +9,7 @@ class Rectangle implements Shape{
 
     @Override
     public void draw() {
-        System.out.println("Rect draw");
+        System.out.println("Rect poke");
     }
 }
 
@@ -17,7 +17,7 @@ class Triangle implements Shape{
 
     @Override
     public void draw() {
-        System.out.println("Rect draw");
+        System.out.println("Rect poke");
     }
 }
 
@@ -25,6 +25,6 @@ class Circle implements Shape{
 
     @Override
     public void draw() {
-        System.out.println("Circle draw");
+        System.out.println("Circle poke");
     }
 }

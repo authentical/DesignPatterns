@@ -1,0 +1,7 @@
+Useful for when creation of an object is expensive.
+Provides mechanism to do shallow and deep copies of the object.
+Client can make new instances without knowing which specific class is being created.
+
+-Make a copy and its editable.
+-Can be used to reduce DB calls.
+-Abstracts the creational part of the object creation and composition.

@@ -1,10 +1,9 @@
-package Factory.L32StaticFactory;
-
+package Creational.Factory.L31Concrete;
 
 public class ShapeFactory {
 
 
-    public static Shape getShape(String shapeType){
+    public Shape getShape(String shapeType){
 
         if(shapeType == null){
             return null;

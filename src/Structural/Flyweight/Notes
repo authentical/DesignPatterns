@@ -1,0 +1,5 @@
+Reduce number of objects that get created.
+Useful for devices with a small amount of memory.
+Uses a factory
+"It" must be independent of the concrete flyweights object.
+"it" has to be sharable.

@@ -1,4 +1,4 @@
-package Factory.L32StaticFactory;
+package Creational.Factory.L32StaticFactory;
 
 public class L32Static {
 
