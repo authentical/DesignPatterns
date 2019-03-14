@@ -1,0 +1,7 @@
+-Avoids coupling the sender of a request to it's receiver
+-Sequential processing of objects. Processing initiated by source
+-Useful when you want to hide handlers
+
+
+Examples
+-Contextual help messages. User can click on anything in a UI and information about it pops up.
