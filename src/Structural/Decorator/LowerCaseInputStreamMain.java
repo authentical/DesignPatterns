@@ -7,6 +7,7 @@ class LowerCaseInputStream extends FilterInputStream{
 
 
     public LowerCaseInputStream(InputStream in){
+
         super(in);
     }
 

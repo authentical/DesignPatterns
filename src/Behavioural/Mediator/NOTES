@@ -1,0 +1,17 @@
+Mediator takes responsbility for communication between a group of objects.
+It acts as router between objects.
+Decouples co-dependent objects.
+Centralizes control logic.
+
+Use when interdependent objects form difficult-to-understand structure. BEEN THERE!
+
+May not be appropriate if there's a lot of sub-classing.
+
+Examples
+-> Air traffic control: Airplane-OtherAirplanes-Airport
+-> House: Hitting snooze turns on coffee maker
+-> Coordinate related GUI components
+-> Timer class schedule methods
+-> Concurrency Executor method
+-> JMS uses Mediator and Observer to allow applications to subscribe and publish data
+

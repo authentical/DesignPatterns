@@ -1,0 +1,12 @@
+Save an objects state so it can be restored later without violating encapsulation.
+Special implementation so object data is completely private, saved state data becomes immutable.
+
+
+
+Examples:
+Undo object state
+Save game progress
+UML shapes connect by line... rectangles movable but line stays connected. I don't get this one.
+Checkpoints in undo operations
+
+

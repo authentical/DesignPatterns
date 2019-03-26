@@ -1,0 +1,8 @@
+Bridge allows abstractions to vary independently.
+
+Something drawable may have a shape, a color, texture, an opacity... but not all
+of these things need be drawn using the same class. Some functionality
+can be removed from say an abstract class Drawable, put in it's own abstract class
+and have that separated functionality and it's implementations be allowed to change and extend
+as much as desired without refactoring the Drawable.
+

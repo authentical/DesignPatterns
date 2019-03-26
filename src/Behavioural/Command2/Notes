@@ -1,0 +1,11 @@
+Useful for
+-Undo/Redo-Transactionals
+-Create a DB record, Call a service to update a ticket
+-Implement callbacks --> EXAMPLES??
+-Networking ---> EXAMPLES??
+-
+
+Requests are encapsulated
+
+
+Keywords: Invoker, Client, Command, Receiver

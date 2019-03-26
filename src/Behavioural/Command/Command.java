@@ -20,7 +20,7 @@ class OpenFileCommand implements Command{
     //Previous state before execute()
     String beforeExecuteState;
     //Executed state before undo()
-    String beforeUndoState;
+    String afterExecuteState;
 
     public OpenFileCommand(FSReceiver fs) {
 
@@ -30,6 +30,7 @@ class OpenFileCommand implements Command{
     @Override
     public void execute() {
         // Save current state in case undo is called
+        beforeExecuteState="beforeExecuteState";
         System.out.println("Saved state");
         this.fs.openFile();
     }
@@ -37,9 +38,11 @@ class OpenFileCommand implements Command{
     @Override
     public void undo() {
         // Save current state in case redo is called.
+        afterExecuteState = this.getClass().toString();
         System.out.println("Saved state");
         // Restore previous state
         System.out.println("OPEN: Reverted to state before EXECUTE.");
+        System.out.println(beforeExecuteState);
 
 
     }
@@ -47,10 +50,11 @@ class OpenFileCommand implements Command{
     @Override
     public void redo() {
         // Save current state in case undo is called
+        // but its already saved
         System.out.println("Saved state");
         // Restore re-done state
         System.out.println("OPEN: Reverted to state before UNDO.");
-
+        System.out.println(afterExecuteState);
     }
 }
 class WriteFileCommand implements Command{
@@ -60,7 +64,7 @@ class WriteFileCommand implements Command{
     //Previous state before execute()
     String beforeExecuteState;
     //Executed state before undo()
-    String beforeUndoState;
+    String afterExecuteState;
 
     public WriteFileCommand(FSReceiver fs) {
 
@@ -70,6 +74,7 @@ class WriteFileCommand implements Command{
     @Override
     public void execute() {
         // Save current state in case undo is called
+        beforeExecuteState="beforeExecuteState";
         System.out.println("Saved state");
         this.fs.writeFile();
     }
@@ -77,9 +82,11 @@ class WriteFileCommand implements Command{
     @Override
     public void undo() {
         // Save current state in case redo is called.
+        afterExecuteState = this.getClass().toString();
         System.out.println("Saved state");
         // Restore previous state
         System.out.println("WRITE: Reverted to state before EXECUTE.");
+        System.out.println(beforeExecuteState);
 
 
     }
@@ -87,10 +94,11 @@ class WriteFileCommand implements Command{
     @Override
     public void redo() {
         // Save current state in case undo is called
+        // but its already saved
         System.out.println("Saved state");
         // Restore re-done state
         System.out.println("WRITE: Reverted to state before UNDO.");
-
+        System.out.println(afterExecuteState);
     }
 }
 class CloseFileCommand implements Command{
@@ -100,7 +108,7 @@ class CloseFileCommand implements Command{
     //Previous state before execute()
     String beforeExecuteState;
     //Executed state before undo()
-    String beforeUndoState;
+    String afterExecuteState;
 
     public CloseFileCommand(FSReceiver fs) {
 
@@ -110,6 +118,7 @@ class CloseFileCommand implements Command{
     @Override
     public void execute() {
         // Save current state in case undo is called
+        beforeExecuteState="beforeExecuteState";
         System.out.println("Saved state");
         this.fs.closeFile();
     }
@@ -117,9 +126,11 @@ class CloseFileCommand implements Command{
     @Override
     public void undo() {
         // Save current state in case redo is called.
+        afterExecuteState = this.getClass().toString();
         System.out.println("Saved state");
         // Restore previous state
         System.out.println("CLOSE: Reverted to state before EXECUTE.");
+        System.out.println(beforeExecuteState);
 
 
     }
@@ -127,9 +138,10 @@ class CloseFileCommand implements Command{
     @Override
     public void redo() {
         // Save current state in case undo is called
+        // but its already saved
         System.out.println("Saved state");
         // Restore re-done state
         System.out.println("CLOSE: Reverted to state before UNDO.");
-
+        System.out.println(afterExecuteState);
     }
 }
