@@ -1,5 +1,6 @@
 Save an objects state so it can be restored later without violating encapsulation.
-Special implementation so object data is completely private, saved state data becomes immutable.
+Special implementation so Originator object data "a Memento" is completely private,
+saved state data becomes immutable. Often an inner class.
 
 
 

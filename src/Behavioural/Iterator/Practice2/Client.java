@@ -19,6 +19,8 @@ public class Client {
 
         System.out.println(artIter.last());
 
+        System.out.println(sciIter.last());
+
 
 
     }
